@@ -4,39 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="datos-alumno">
-        <div class="foto">
-            <img src="imagenes/profile.png" alt="Perfil">
+    <div class="general-content">
+        <div class="personal-data">
+            <div class="foto">
+                <img src="imagenes/profile.jpg" alt="Perfil" id="profile" class="flip-1">
+                <img src="imagenes/profile2.png" alt="Perfil" id="profile2" class="flip-2">
+            </div>
+            <div class="basic-data">
+                <p class="name">José Iván Barreno Bulux</p>
+                <p><b>Edad:</b> 29 años</p>
+                <p><b>Sexo:</b> Masculino</p>
+                <p><b>Altura:</b> 1.55 m</p>
+            </div>
         </div>
-        <div class="datos">
-            <p>José Iván Barreno Bulux</p>
-            <p>Edad: 29 años</p>
-            <p>Sexo: Masculino</p>
-            <p>Altura: 1.55 m</p>
+
+        <div class="description">
+            <h2>INGENIERIA EN SITEMAS</h2>
+            <p class="info">La&nbsp;<strong>Ingeniería en Sistemas&nbsp;</strong>tiene como objetivo formar profesionales capaces de crear tecnología, así como de desempeñar una amplia gama de actividades a nivel de dirección, gerencia y desarrollo, en toda clase de organizaciones locales y multinacionales, en el sector académico, público y privado. Nuestros estudiantes aprenden de profesionales destacados y tienen la oportunidad de practicar en laboratorios especialmente equipados.</p>
+            
         </div>
     </div>
     
-    <div class="descripcion-carrera">
-        <h2>INGENIERIA EN SITEMAS</h2>
-        <P>
-            La Ingeniería en Sistemas tiene como objetivo formar profesionales capaces de crear tecnología, así como de desempeñar una amplia gama de actividades a nivel de dirección, gerencia y desarrollo, en toda clase de organizaciones locales y multinacionales, en el sector académico, público y privado. Nuestros estudiantes aprenden de profesionales destacados y tienen la oportunidad de practicar en laboratorios especialmente equipados.
-            <br> 
-            La carrera de Ingeniería de Sistemas, Informática y Ciencias de la Computación de Universidad Galileo nace en la década de los 70 ́s y desde entonces ha mantenido un liderazgo regional al brindar a sus estudiantes, lo más avanzado en su momento, de la tecnología disponible en la industria.
-        </P>
-    </div>
+    <div class="general-content">
+        
+        <div class="card-content">
+            <h2 class="tittle-cards">Libros</h2>
 
-    <div class="hobbies">
+            <ul>
+                <li>Harry Potter</li>
+                <li>Blade Runner</li>
+                <li>Dunas</li>
+                <li>Los Juegos del Hambre</li>
+                <li>Maze Runner</li>
+            </ul>
+            
+        </div>
 
-    </div>
-
-    <div class="libros">
-
-    </div>
-
-    <div class="sitios-web">
-
+        <div class="card-content">
+            <h2 class="tittle-cards">Hobbies</h2>
+            <ul>
+                <li>Escuchar Musica</li>
+                <li>Ir al Cine</li>
+                <li>Ver videos en YouTube</li>
+                <li>Manejar Moto</li>
+            </ul>
+            
+        </div>
+    
+        <div class="card-content">
+            <h2 class="tittle-cards">Sitios Web</h2>
+            
+            <table id="sites">
+                <thead>
+                    <tr>
+                        <th>URL</th>
+                        <th>Nombre</th>
+                        <th>Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.w3schools.com/"><span><img src="imagenes/chain.png" alt="" class="link-table"></span></a></td>
+                        <td>W3Schools</td>
+                        <td><span>&starf;&starf;&starf;&starf;&starf;</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.desmos.com/calculator?lang=es"><span><img src="imagenes/chain.png" alt="" class="link-table"></span></a></td>
+                        <td>Desmos</td>
+                        <td><span>&starf;&starf;&starf;&starf;&starf;</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://matrixcalc.org/es/"><span><img src="imagenes/chain.png" alt="" class="link-table"></span></a></td>
+                        <td>Calculadora de matrices</td>
+                        <td><span>&starf;&starf;&starf;&starf;&star;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </body>

@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(28,4,73);
+    background: linear-gradient(45deg, rgba(28,4,73,1) 0%, rgba(9,9,121,1) 23%, rgba(89,197,219,1) 100%);
+    color: white;
+}
+
+div {
+    margin: 5px;
+    padding: 5px;
+}
+
+.general-content{
+    height: 47vh;
+}
+
+.general-content, .personal-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description, .card-content, .personal-data {
+    height: 75%;
+}
+
+#profile, #profile2 {
+    height: 90%;
+    /*width: 150px;*/
+    border-radius: 15px;
+}
+
+.personal-data, .description {
+    width: 47%;
+    border-style: solid;
+    border-color: rgb(81, 0, 128);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgba(33, 104, 116, 0.5);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto {
+    /*width: 20%;
+    height: 200px;*/
+    justify-content: center;
+    height: 25vh;
+    width: 25vh;
+    position: relative;
+    transition: all 1s ease;
+    transform: perspective(600px);
+    transform-origin: 100% 50%;
+    transform-style: preserve-3d;
+}
+
+.foto:hover {
+    transform: perspective(600px) rotateY(-180deg) translateX(100%);
+}
+
+.foto .flip-1,
+.foto .flip-2{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.foto .flip-2{
+    transform: rotateY(-180deg);
+}
+
+.basic-data {
+    width: 75%;
+}
+
+.card-content {
+    border-style: solid;
+    border-color: rgb(81, 0, 128);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(33, 104, 116, 0.5);
+}
+
+#sites {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#sites th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4c2174;
+    color: white;
+}
+
+#sites td, #sites th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.link-table {
+    height: 25px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 0.3em;
+    cursor: pointer;
+    padding: 0.2em;
+    background: rgb(43, 43, 43);
+    position: relative;
+    color: white;
+    border-radius: 5px;
+    font-size: 2vh;
+}
+
+.tittle-cards:hover {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(76, 33, 116, 1);
+}
+
+.info {
+    padding: 15px;
+}
+
+.name, h2 {
+    font-weight: 600;
+    font-size: 3.5vh;
+}
+
+p {
+    font-size: 2vh;
+}
